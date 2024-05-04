@@ -16,6 +16,6 @@ public class App {
     LocalDateTime now = LocalDateTime.now();
 
     // Format and display the date and time
-    System.out.println("Current Date and Time: " + now.toString());    
+    System.out.println(now.toString());    
     }
 }
