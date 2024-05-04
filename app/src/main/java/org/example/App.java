@@ -3,12 +3,19 @@
  */
 package org.example;
 
+import java.time.LocalDateTime;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello World! This is gradle job created by Subodh at -  ";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        // Get the current date and time
+    LocalDateTime now = LocalDateTime.now();
+
+    // Format and display the date and time
+    System.out.println("Current Date and Time: " + now.toString());    
     }
 }
