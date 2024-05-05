@@ -1,0 +1,6 @@
+node ('Any'){
+stage (git){
+git branch: 'main', credentialsId: 'Gitlab', url: 'https://github.com/sailsub/JenkinsGradle.git'
+}
+}
+
