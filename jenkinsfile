@@ -25,6 +25,7 @@ pipeline {
         stage ('Gradle run'){
             steps{
                 bat '''gradlew.bat build --scan'''
+                println "Run successfully!!"
             }     
         }           
     }
