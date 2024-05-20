@@ -6,10 +6,18 @@ package org.example;
 import java.time.LocalDateTime;
 
 public class App {
+    public String name = "";
+    
     public String getGreeting() {
         return "Hello World! This is gradle job created by Subodh at -  ";
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+    
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
         // Get the current date and time
