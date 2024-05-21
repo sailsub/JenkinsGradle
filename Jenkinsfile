@@ -17,6 +17,11 @@ pipeline {
                 bat '''gradlew.bat build'''
             }     
         }
+        stage ('Gradle test'){
+            steps{
+                bat '''gradlew.bat test'''
+            }     
+        }
         stage ('Gradle build Scan'){
             steps{
                 bat '''gradlew.bat build --scan'''
